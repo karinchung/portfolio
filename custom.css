@@ -10,6 +10,12 @@ h1 {
   font-size: 50px;
 }
 
+h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px;
+}
+
 /* Hero */
 
 #particles-js {
@@ -27,4 +33,40 @@ h1 {
   z-index: 1;
   margin-top: 150px;
   color: white;
+}
+
+/* Tech */
+
+#tech {
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  margin: 40px;
+  font-size: 90px;
+}
+
+/* Project */
+
+#projects {
+  color: white;
+  font-size: 16px;
+}
+
+.projects {
+  background: #333;
+}
+
+.portImg {
+  width: 350px;
+  height: 300px;
+}
+
+.section {
+  text-align: center;
+}
+
+.project-text {
+  margin: 20px;
 }
