@@ -61,6 +61,7 @@ h2 {
 .portImg {
   width: 350px;
   height: 300px;
+  border-radius: 5px;
 }
 
 .section {
@@ -69,4 +70,21 @@ h2 {
 
 .project-text {
   margin: 20px;
+}
+
+/* About */
+
+.about {
+  font-size: 16px;
+  text-align: center;
+  margin: 30px;
+}
+
+/* Footer */
+
+.footer {
+  background: #001f3f;
+  color: white;
+  font-size: 16px;
+  text-align: center;
 }
