@@ -68,16 +68,11 @@ h2 {
 }
 
 .portImg {
-  width: 40vw;
-  height: 50vh;
+  width: 30em;
+  height: 25em;
   border-radius: 7px;
   position: relative;
 }
-
-/*.portImg:hover {
-  width: 405px;
-  height: 330px;
-}*/
 
 .section {
   text-align: center;
