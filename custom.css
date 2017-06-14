@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font:normal 75% Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-shadow: #444 0 1px 1px;
   background:transparent;
 }
@@ -41,10 +41,19 @@ h2 {
   text-align: center;
 }
 
+#tech > h2 {
+  margin-bottom: 0;
+}
+
 .icon {
   display: inline-block;
-  margin: 50px;
+  margin: 40px;
   font-size: 90px;
+}
+
+.icon-container {
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 /* Project */
@@ -59,9 +68,14 @@ h2 {
 }
 
 .portImg {
-  width: 350px;
-  height: 300px;
+  width: 400px;
+  height: 325px;
   border-radius: 5px;
+  position: relative;
+}
+
+.portImg:hover {
+  opacity: .3;
 }
 
 .section {
@@ -72,19 +86,9 @@ h2 {
   margin: 20px;
 }
 
-/* About */
-
-.about {
-  font-size: 16px;
-  text-align: center;
-  margin: 30px;
-}
-
 /* Footer */
 
 .footer {
-  background: #001f3f;
-  color: white;
   font-size: 16px;
   text-align: center;
 }
