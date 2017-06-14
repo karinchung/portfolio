@@ -68,15 +68,16 @@ h2 {
 }
 
 .portImg {
-  width: 400px;
-  height: 325px;
-  border-radius: 5px;
+  width: 40vw;
+  height: 50vh;
+  border-radius: 7px;
   position: relative;
 }
 
-.portImg:hover {
-  opacity: .3;
-}
+/*.portImg:hover {
+  width: 405px;
+  height: 330px;
+}*/
 
 .section {
   text-align: center;
@@ -84,6 +85,7 @@ h2 {
 
 .project-text {
   margin: 20px;
+  color: #337ab7;
 }
 
 /* Footer */
