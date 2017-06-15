@@ -35,6 +35,22 @@ h2 {
   color: white;
 }
 
+@media (max-width: 800px) {
+  #particles-js {
+    height: 70vh;
+  }
+}
+
+/*@media (max-width: 767px) {
+  .hero {
+    margin-left: 100px;
+  }
+}*/
+
+@media (max-width: 700px) {
+
+}
+
 /* Tech */
 
 #tech {
@@ -49,6 +65,13 @@ h2 {
   display: inline-block;
   margin: 40px;
   font-size: 90px;
+}
+
+@media (max-width: 840px) {
+  .icon {
+    font-size: 40px;
+    margin: 20px;
+  }
 }
 
 .icon-container {
@@ -66,7 +89,8 @@ h2 {
 }
 
 .projects {
-  background: #333;
+  /*background: #333;*/
+  background: #252525;
 }
 
 .portImg {
