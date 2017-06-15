@@ -61,6 +61,8 @@ h2 {
 #projects {
   color: white;
   font-size: 16px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .projects {
@@ -69,7 +71,7 @@ h2 {
 
 .portImg {
   width: 30em;
-  height: 25em;
+  height: 20em;
   border-radius: 7px;
   position: relative;
 }
@@ -80,7 +82,12 @@ h2 {
 
 .project-text {
   margin: 20px;
-  color: #337ab7;
+}
+
+.proj-icon {
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
 }
 
 /* Footer */
@@ -88,4 +95,10 @@ h2 {
 .footer {
   font-size: 16px;
   text-align: center;
+}
+
+.footer-icon {
+  display: inline-block;
+  font-size: 30px;
+  margin: 5px;
 }
