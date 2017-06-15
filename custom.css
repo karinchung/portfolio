@@ -80,14 +80,11 @@ h2 {
   text-align: center;
 }
 
-.project-text {
-  margin: 20px;
-}
 
-.proj-icon {
+.project-icon {
   display: inline-block;
   font-size: 20px;
-  margin: 5px;
+  margin: 20px;
 }
 
 /* Footer */
@@ -101,4 +98,9 @@ h2 {
   display: inline-block;
   font-size: 30px;
   margin: 5px;
+}
+
+.copyright {
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
