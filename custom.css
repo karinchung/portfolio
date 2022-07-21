@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Spectral', serif;
-  text-shadow: #444 0 1px 1px;
-  background:transparent;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Spectral', serif; */
+  /* text-shadow: #444 0 1px 1px; */
+  background: transparent;
 }
 
 h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 55px;
 }
 
 h2 {
@@ -37,36 +37,45 @@ h2 {
   top: 15%;
 }
 
+.contact-icon {
+  display: inline-block;
+  font-size: 40px;
+  margin: 5px;
+}
+
 @media (max-width: 800px) {
   #particles-js {
     height: 70vh;
   }
 }
 
-git/*@media (max-width: 767px) {
+/*@media (max-width: 767px) {
   .hero {
     margin-left: 100px;
   }
 }*/
 
-@media (max-width: 700px) {
-
-}
+@media (max-width: 700px) {}
 
 /* Tech */
 
 #tech {
   text-align: center;
+  background-color: #1a1a1a;
 }
 
-#tech > h2 {
+#tech>h2 {
   margin-bottom: 0;
+}
+
+#tech>h3 {
+  color: white;
 }
 
 .icon {
   display: inline-block;
-  margin: 40px;
-  font-size: 90px;
+  margin: 20px;
+  font-size: 80px;
 }
 
 @media (max-width: 840px) {
@@ -81,52 +90,23 @@ git/*@media (max-width: 767px) {
   margin-left: 50px;
 }
 
-/* Project */
+/* Footer */
 
-#projects {
+#footer {
   color: white;
   font-size: 16px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.projects {
-  /*background: #333;*/
-  background: #252525;
-}
-
-.portImg {
-  width: 30em;
-  height: 20em;
-  /*border-radius: 7px;*/
-  position: relative;
-}
-
-.section {
-  text-align: center;
-}
-
-
-.project-icon {
-  display: inline-block;
-  font-size: 20px;
-  margin: 20px;
-}
-
-/* Footer */
-
 .footer {
   font-size: 16px;
   text-align: center;
-}
-
-.footer-icon {
-  display: inline-block;
-  font-size: 30px;
-  margin: 5px;
+  background: #252525;
 }
 
 .copyright {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   margin-top: 20px;
+  font-size: 10px;
 }
