@@ -1,112 +1,253 @@
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  /* font-family: 'Spectral', serif; */
-  /* text-shadow: #444 0 1px 1px; */
+  font-family: 'Inter', sans-serif;
   background: transparent;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
   margin: 0;
-  font-size: 55px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 40px;
-  margin: 30px;
-}
-
-/* Hero */
-
-#particles-js {
-  width: 100%;
-  height: 100vh;
-  background-color: #001f3f;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #2196F3, #00BCD4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero {
   position: absolute;
   z-index: 1;
-  margin-top: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  top: 15%;
+  text-align: center;
+  width: 100%;
+}
+
+.lead {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+  opacity: 0.9;
 }
 
 .contact-icon {
   display: inline-block;
-  font-size: 40px;
-  margin: 5px;
+  font-size: 1.8rem;
+  margin: 1rem;
+  transition: transform 0.2s ease;
 }
 
-@media (max-width: 800px) {
-  #particles-js {
-    height: 70vh;
-  }
+.contact-icon:hover {
+  transform: translateY(-3px);
 }
 
-/*@media (max-width: 767px) {
-  .hero {
-    margin-left: 100px;
-  }
-}*/
-
-@media (max-width: 700px) {}
-
-/* Tech */
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a192f 100%);
+}
 
 #tech {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+}
+
+#tech h3 {
+  position: relative;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin: 4rem 0 3rem;
   text-align: center;
-  background-color: #1a1a1a;
+  font-weight: 600;
 }
 
-#tech>h2 {
-  margin-bottom: 0;
-}
-
-#tech>h3 {
-  color: white;
-}
-
-.icon {
-  display: inline-block;
-  margin: 20px;
-  font-size: 80px;
-}
-
-@media (max-width: 840px) {
-  .icon {
-    font-size: 40px;
-    margin: 20px;
-  }
+#tech h3:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(45deg, #2196F3, #00BCD4);
+  border-radius: 3px;
 }
 
 .icon-container {
-  margin-right: 50px;
-  margin-left: 50px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 2rem auto;
 }
 
-/* Footer */
-
-#footer {
-  color: white;
-  font-size: 16px;
-  margin-left: 10%;
-  margin-right: 10%;
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: white;
 }
 
-.footer {
-  font-size: 16px;
+.icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.icon i {
+  font-size: 3.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.icon span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
   text-align: center;
-  background: #252525;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
 }
 
-.copyright {
-  /* margin-bottom: 50px; */
-  margin-top: 20px;
-  font-size: 10px;
+.icon:hover span {
+  color: #2196F3;
+  transform: scale(1.05);
+}
+
+/* Add responsive padding */
+@media (max-width: 768px) {
+  .hero {
+    top: 45%;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 12vw !important;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .lead {
+    font-size: 3.8vw !important;
+    line-height: 1.3;
+    margin: 0.4rem 0;
+    opacity: 0.9;
+  }
+
+  .contact-icon {
+    font-size: 6vw !important;
+    margin: 0.8rem;
+  }
+
+  #particles-js {
+    height: 100vh;
+  }
+
+  #tech h3 {
+    font-size: 1.2rem !important;
+    margin: 1.5rem 0 1rem !important;
+  }
+
+  #tech .icon-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.5rem !important;
+    padding: 0.5rem !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  #tech .icon {
+    padding: 0.5rem !important;
+  }
+
+  #tech .icon i {
+    font-size: 2rem !important;
+  }
+
+  #tech .icon span {
+    font-size: 0.6rem !important;
+    margin-top: 0.2rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+}
+
+/* Keep tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .icon-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra small devices - adjust text slightly smaller */
+@media (max-width: 380px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .lead {
+    font-size: 1.6rem;
+  }
+}
+
+/* Optional: Add section transitions */
+.icon-container {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger the animation for each container */
+.icon-container:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.icon-container:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Direct targeting of tech section text */
+#tech .icon span {
+  font-size: 0.7rem !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  max-width: 100% !important;
+  display: block !important;
+}
+
+/* iPhone-specific */
+@media screen and (max-width: 375px) {
+  #tech {
+    overflow: hidden !important;  /* Prevent overflow */
+  }
+  
+  #tech .icon-container {
+    width: 90% !important;
+    padding: 0 !important;
+  }
+  
+  #tech .icon {
+    transform: scale(0.8) !important;  /* Make everything slightly smaller */
+  }
 }
