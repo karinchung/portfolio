@@ -1,0 +1,5 @@
+   [[redirects]]
+     from = "/jury-duty/*"
+     to = "https://karinchung-juryduty.netlify.app/:splat"
+     status = 200
+     force = true
