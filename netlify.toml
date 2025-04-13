@@ -1,3 +1,6 @@
+[build]
+  publish = "."
+
 [[redirects]]
   from = "/jury-duty"
   to = "https://karinchung-juryduty.netlify.app/"
