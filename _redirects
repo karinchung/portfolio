@@ -1,5 +1,5 @@
-# Handle main site routing
-/*    /index.html   200
-
-# Handle jury duty redirects
+# Handle jury duty redirects first
 /jury-duty    https://karinchung-juryduty.netlify.app/    200!
+
+# Handle main site routing last
+/*    /index.html   200
