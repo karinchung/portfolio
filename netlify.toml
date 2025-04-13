@@ -1,12 +1,7 @@
 [build]
   publish = "."
-  command = ""
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
+# Handle redirects first (more specific rules)
 [[redirects]]
   from = "/jury-duty"
   to = "https://karinchung-juryduty.netlify.app/"
@@ -18,3 +13,9 @@
   to = "https://karinchung-juryduty.netlify.app/:splat"
   status = 200
   force = true
+
+# Handle main site routing last (more general rule)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
