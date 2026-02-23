@@ -1,7 +1,9 @@
 # Handle jury duty redirects first
 /jury-duty      https://karinchung-juryduty.netlify.app/    200!
 
-/event-radar    https://karinchung-eventradar.netlify.app   200!
+/event-radar    https://karinchung-eventradar.netlify.app/  200!
+
+/sv-unknown     https://karinchung-svunknown.netlify.app/   200!
 
 # Handle main site routing last
 /*              /index.html                                 200
